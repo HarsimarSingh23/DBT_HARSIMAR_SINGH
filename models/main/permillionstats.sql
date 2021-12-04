@@ -1,0 +1,9 @@
+select  
+    NEW_CASES_PER_MILLION as new_cases_per_million,
+    NEW_DEATHS_PER_MILLION as new_deaths_per_million,
+    TOTAL_CASES_PER_MILLION as total_cases_per_million,
+    TOTAL_DEATHS_PER_MILLION as total_deaths_per_million,
+    LOCATION_LEVEL as localtion_level,
+    DATE as date
+    from FIVETRAN_INTERVIEW_DB.GOOGLE_SHEETS."COVID_19_INDONESIA_HARSIMAR_SINGH"
+        
