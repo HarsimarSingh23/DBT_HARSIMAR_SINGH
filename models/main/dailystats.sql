@@ -9,4 +9,4 @@ select  TOTAL_RECOVERED as total_recoveries,
         NEW_ACTIVE_CASES as new_active_cases,
         TOTAL_CASES as total_cases,
         LOCATION_LEVEL as localtion_level,
-        cast(DATE as date) as DATE from FIVETRAN_INTERVIEW_DB.GOOGLE_SHEETS."COVID_19_INDONESIA_HARSIMAR_SINGH"
+        cast(DATE as date) as DATE from {{ref('countrydata')}}
